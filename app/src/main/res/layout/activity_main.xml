@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+    <!--Edit Text-->
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:backgroundTint="@color/text_background"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:textColor="@color/negro"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:backgroundTint="@color/text_background"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        android:textColor="@color/negro"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintTop_toTopOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etComentario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:gravity="center"
+        android:hint="@string/comentario"
+        android:inputType="text"
+        android:lines="3"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toTopOf="@+id/gl2"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLenguajeProgramacion1" />
+
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/text_background"
+        android:backgroundTint="@color/text_background"
+        android:hint="@string/ejemploCorreo"
+        android:inputType="text"
+        android:textColor="@color/negro"
+        app:layout_constraintEnd_toEndOf="@+id/etApellidos"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <!--Botones-->
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEnviar"
+        android:background="@color/botones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrar"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/gl2" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBorrar"
+        android:background="@color/botones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/btnEnviar"
+        app:layout_constraintTop_toBottomOf="@+id/gl2" />
+
+    <!--Check Box-->
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/text_background"
+        android:text="@string/lenguajeProgramacion"
+        android:textColor="@color/negro"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/rbGenero3" />
+
+    <CheckBox
+        android:id="@+id/cbLenguajeProgramacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLenguajeProgramacion" />
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:text="@string/java"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/cbLenguajeProgramacion1"
+        app:layout_constraintStart_toEndOf="@+id/cbLenguajeProgramacion1"
+        app:layout_constraintTop_toTopOf="@+id/cbLenguajeProgramacion1" />
+
+    <CheckBox
+        android:id="@+id/cbLenguajeProgramacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/tvLenguajeProgramacion2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLenguajeProgramacion" />
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:text="@string/c"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/cbLenguajeProgramacion2"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/cbLenguajeProgramacion2"
+        app:layout_constraintTop_toTopOf="@+id/cbLenguajeProgramacion2" />
+
+    <CheckBox
+        android:id="@+id/cbLenguajeProgramacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvLenguajeProgramacion3"
+        app:layout_constraintTop_toBottomOf="@+id/tvLenguajeProgramacion" />
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:text="@string/javaScript"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/cbLenguajeProgramacion3"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintTop_toTopOf="@+id/cbLenguajeProgramacion3" />
+
+    <!--Radio Buttons-->
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/text_background"
+        android:backgroundTint="@color/text_background"
+        android:text="@string/genero"
+        android:textColor="@color/negro"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
+
+    <RadioButton
+        android:id="@+id/rbGenero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="@color/blanco"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero" />
+
+    <TextView
+        android:id="@+id/tvGenero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:text="@string/generoHombre"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/rbGenero1"
+        app:layout_constraintStart_toEndOf="@+id/rbGenero1"
+        app:layout_constraintTop_toTopOf="@+id/rbGenero1" />
+
+    <RadioButton
+        android:id="@+id/rbGenero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/rbGenero1" />
+
+    <TextView
+        android:id="@+id/tvGenero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:text="@string/generoMujer"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/rbGenero2"
+        app:layout_constraintStart_toEndOf="@+id/rbGenero2"
+        app:layout_constraintTop_toTopOf="@+id/rbGenero2" />
+
+    <RadioButton
+        android:id="@+id/rbGenero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/gl3"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintTop_toBottomOf="@+id/rbGenero2" />
+
+    <TextView
+        android:id="@+id/tvGenero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/text_background"
+        android:text="@string/generoOtro"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/rbGenero3"
+        app:layout_constraintStart_toEndOf="@+id/rbGenero3"
+        app:layout_constraintTop_toTopOf="@+id/rbGenero3" />
+
+    <!--Guide Lines-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

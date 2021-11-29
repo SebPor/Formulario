@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="comentario">Añade un comentario…</string>
+    <string name="ejemploCorreo">ejemplo@gmail.com</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnBorrar">Borrar</string>
+    <string name="lenguajeProgramacion">Que lenguajes conoces?</string>
+    <string name="java">Java</string>
+    <string name="c">C</string>
+    <string name="javaScript">JavaScript</string>
+    <string name="genero">Genero</string>
+    <string name="generoHombre">Hombre</string>
+    <string name="generoMujer">Mujer</string>
+    <string name="generoOtro">Otro</string>
+</resources>

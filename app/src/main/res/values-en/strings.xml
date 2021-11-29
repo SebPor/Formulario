@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Form</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Last Name</string>
+    <string name="comentario">Add a comment…</string>
+    <string name="ejemploCorreo">example@gmail.com</string>
+    <string name="btnEnviar">Send</string>
+    <string name="btnBorrar">Delete</string>
+    <string name="lenguajeProgramacion">What languages do you know?</string>
+    <string name="java">Java</string>
+    <string name="c">C</string>
+    <string name="javaScript">JavaScript</string>
+    <string name="genero">Gender</string>
+    <string name="generoHombre">Man</string>
+    <string name="generoMujer">Woman</string>
+    <string name="generoOtro">Other</string>
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintEnd_toStartOf="@id/etApellidos"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etNombre"
+        app:layout_constraintEnd_toStartOf="@+id/etCorreo"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/ejemploCorreo"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etApellidos"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"/>
+
+    <EditText
+        android:id="@+id/etComentario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/comentario"
+        android:inputType="text"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/gl3"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"
+        app:layout_constraintStart_toEndOf="@+id/gl1"/>
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genero"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"/>
+
+    <TextView
+        android:id="@+id/tvGenero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generoHombre"
+        app:layout_constraintTop_toTopOf="@+id/rbGenero1"
+        app:layout_constraintBottom_toBottomOf="@+id/rbGenero1"
+        app:layout_constraintStart_toEndOf="@+id/rbGenero1"/>
+
+    <TextView
+        android:id="@+id/tvGenero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generoMujer"
+        app:layout_constraintTop_toTopOf="@+id/rbGenero2"
+        app:layout_constraintBottom_toBottomOf="@+id/rbGenero2"
+        app:layout_constraintStart_toEndOf="@+id/rbGenero2"/>
+
+    <TextView
+        android:id="@+id/tvGenero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generoOtro"
+        app:layout_constraintTop_toTopOf="@+id/rbGenero3"
+        app:layout_constraintBottom_toBottomOf="@+id/rbGenero3"
+        app:layout_constraintStart_toEndOf="@+id/rbGenero3"/>
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lenguajeProgramacion"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"/>
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/java"
+        app:layout_constraintTop_toTopOf="@+id/cbLenguajeProgramacion1"
+        app:layout_constraintBottom_toBottomOf="@+id/cbLenguajeProgramacion1"
+        app:layout_constraintStart_toEndOf="@+id/cbLenguajeProgramacion1" />
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/c"
+        app:layout_constraintTop_toTopOf="@+id/cbLenguajeProgramacion2"
+        app:layout_constraintBottom_toBottomOf="@+id/cbLenguajeProgramacion2"
+        app:layout_constraintStart_toEndOf="@+id/cbLenguajeProgramacion2" />
+
+    <TextView
+        android:id="@+id/tvLenguajeProgramacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/javaScript"
+        app:layout_constraintTop_toTopOf="@+id/cbLenguajeProgramacion3"
+        app:layout_constraintBottom_toBottomOf="@+id/cbLenguajeProgramacion3"
+        app:layout_constraintStart_toEndOf="@+id/cbLenguajeProgramacion3" />
+
+    <CheckBox
+        android:id="@+id/cbLenguajeProgramacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLenguajeProgramacion"
+        app:layout_constraintStart_toStartOf="@+id/tvLenguajeProgramacion"/>
+
+    <CheckBox
+        android:id="@+id/cbLenguajeProgramacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cbLenguajeProgramacion1"
+        app:layout_constraintStart_toStartOf="@+id/cbLenguajeProgramacion1"/>
+
+    <CheckBox
+        android:id="@+id/cbLenguajeProgramacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cbLenguajeProgramacion2"
+        app:layout_constraintStart_toStartOf="@+id/cbLenguajeProgramacion2"/>
+
+
+    <RadioButton
+        android:id="@+id/rbGenero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero"
+        app:layout_constraintStart_toStartOf="@+id/tvGenero" />
+
+    <RadioButton
+        android:id="@+id/rbGenero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toBottomOf="@+id/rbGenero1"
+        app:layout_constraintStart_toStartOf="@+id/rbGenero1" />
+
+    <RadioButton
+        android:id="@+id/rbGenero3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintTop_toBottomOf="@+id/rbGenero2"
+        app:layout_constraintStart_toStartOf="@+id/rbGenero2" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEnviar"
+        app:layout_constraintTop_toBottomOf="@+id/gl3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl1"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrar"/>
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBorrar"
+        app:layout_constraintTop_toBottomOf="@id/gl3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toStartOf="@+id/gl2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
